@@ -78,6 +78,7 @@ https://localhost:8443/apiman-gateway/EkklotOrg/EkklotApi/1.0/rest/personservice
 - Create and publish the modified API
 - Add Policy > Quota Policy > Set to 3 per day > Re-publish
 - Firefox > Test REST GET via Firefox several times until the threashold is exceeded
+- OPTIONAL: SoapUI > Test REST GET > check the error response
 - Add Policy > Basic Authentication Policy > Re-publish
   - Identity Source > Static
   - User/Password
