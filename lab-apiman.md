@@ -50,7 +50,7 @@ For User Guide, see [www.apiman.io][2]
 ##### Configure the API Endpoint
 
 ```
-http://localhost:8989/rest
+http://localhost:8989/
 ```
 
 ##### Set up at least one Plan, or make the API public
@@ -65,10 +65,10 @@ http://localhost:8989/rest
 https://localhost:8443/apiman-gateway/EkklotOrg/EkklotApi/1.0
 ```
 
-#### Run REST against this managed endpoint
+#### Firefox Run REST against this managed endpoint
 
 ```
-curl -k -v -X GET https://localhost:8443/apiman-gateway/EkklotOrg/EkklotApi/1.0/personservice/person/get/1
+https://localhost:8443/apiman-gateway/EkklotOrg/EkklotApi/1.0/rest/personservice/person/get/1
 ```
 
 #### Try out apiman
@@ -76,10 +76,12 @@ curl -k -v -X GET https://localhost:8443/apiman-gateway/EkklotOrg/EkklotApi/1.0/
 - View Metrics
 - Enable Security: Implementation > API Security > Basic Authentication
 - Create and publish the modified API
-- Add Policy > Quota Policy > Set to 3 per day
-- Add Policy > Basic Authentication Policy
+- Add Policy > Quota Policy > Set to 3 per day > Re-publish
+- Firefox > Test REST GET via Firefox several times until the threashold is exceeded
+- Add Policy > Basic Authentication Policy > Re-publish
   - Identity Source > Static
   - User/Password
+- Firefox > Test REST GET via Firefox and verify that it requires authentication
 
 
   [1]: http://www.apiman.io/latest/download.html
