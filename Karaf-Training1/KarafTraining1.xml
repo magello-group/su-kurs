@@ -9,7 +9,7 @@
 
   <cm:property-placeholder persistent-id="KarafTraining1" update-strategy="reload">
     <cm:default-properties>
-      <cm:property name="message" value="Hello Stockholms Universitet" />
+      <cm:property name="message" value="Hello Örebro Universitet" />
     </cm:default-properties>
   </cm:property-placeholder>
 
