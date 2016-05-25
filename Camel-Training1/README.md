@@ -18,7 +18,7 @@ To build this project use
 
 * The camel route does nothing interesting – let’s beef it up!
 * Create a content based router, and move the message to out/good or out/bad based on the school field
-* Use xquery to parse the xml
+* Use xpath to parse the xml
 
 # Training - Part 3
 
