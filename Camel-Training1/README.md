@@ -24,4 +24,4 @@ To build this project use
 
 * Now rewrite the route using XML and blueprint
 * Use the blueprint archetype to create the project
-* mvn archetype:generate -DarchetypeGroupId=org.apache.camel.archetypes -DarchetypeVersion=2.16.1  -DarchetypeArtifactId=camel-archetype-blueprint
+* mvn archetype:generate -DarchetypeGroupId=org.apache.camel.archetypes -DarchetypeVersion=2.16.1 -DarchetypeArtifactId=camel-archetype-blueprint -DgroupId=se.oru.blue -DartifactId=school-choice -Dversion=1.0.0-SNAPSHOT
