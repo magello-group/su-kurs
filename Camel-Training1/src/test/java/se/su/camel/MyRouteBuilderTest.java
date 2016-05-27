@@ -9,7 +9,6 @@ import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Ignore;
 import org.junit.Test;
 
-@Ignore
 public class MyRouteBuilderTest extends CamelTestSupport {
  
     @Produce(uri = "file:/tmp/CamelTraining1/in")
@@ -36,7 +35,7 @@ public class MyRouteBuilderTest extends CamelTestSupport {
         String expectedBody = "<matched/>";
         resultEndpoint.expectedBodiesReceived(expectedBody + "1");
         template.sendBody(expectedBody);
-        resultEndpoint.assertIsSatisfied();
+        resultEndpoint.assertIsNotSatisfied();
     }
  
     @Override
