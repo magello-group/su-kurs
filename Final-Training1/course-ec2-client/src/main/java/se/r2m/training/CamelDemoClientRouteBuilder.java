@@ -17,11 +17,11 @@ public class CamelDemoClientRouteBuilder extends RouteBuilder {
 	// The remote ActiveMQ address has already been setup in the blueprint-bean.xml:
 	//
 	//   <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
-    //     <property name="brokerURL" value="tcp://[server-ip]:61616"/>
-    //     <property name="userName" value="smx"/>
-    //     <property name="password" value="smx"/>
-    //   </bean>
-    //
+	//     <property name="brokerURL" value="tcp://[server-ip]:61616"/>
+	//     <property name="userName" value="smx"/>
+	//     <property name="password" value="smx"/>
+	//   </bean>
+	//
 	// Messages are recieved in this format: 
 	// 
 	// <sms>
@@ -67,7 +67,7 @@ public class CamelDemoClientRouteBuilder extends RouteBuilder {
 	// Proposed excercise
 	// ------------------
 	//
-	// 1. Listen to the ActiveMQ topic 'sms-in'. Whenever an SMS is sent the server will publish a message
+	// 1. Listen to the ActiveMQ topic 'sms.in'. Whenever an SMS is sent the server will publish a message
 	// on this queue
 	// 2. Translate the message from English to French using the translation service
 	// 3. Post the result on the Hipchat Group 'camel-demo' using color-coding
